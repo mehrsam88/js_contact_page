@@ -1,0 +1,9 @@
+$input-color-border:#c4c4c406;
+$yellow-main:#F2CB2E;
+$black-main:#111111;
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

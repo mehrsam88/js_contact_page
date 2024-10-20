@@ -1,0 +1,145 @@
+#container {
+  width: 100%;
+  height: 100%;
+  @include flex;
+  justify-content: space-between;
+  #contact-data {
+    width: 50%;
+    height: 100%;
+    border-radius: 0 0 62px 0;
+    @include flex;
+    flex-direction: column;
+    background: $black-main;
+    color: #ffffff;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 79px;
+      height: 79px;
+      background-color: $black-main;
+      top: 0;
+      right: -79px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100%;
+      background-color: $yellow-main;
+      top: 0;
+      right: -100px;
+      border-radius: 62px 0 0 0;
+    }
+    #form {
+      width: 60%;
+      #header-form {
+        margin: {
+          bottom: 8%;
+        }
+        h1 {
+          font: {
+            size: 4rem;
+            family: "Bebas-Neue";
+            weight: 500;
+          }
+          letter-spacing: 1px;
+        }
+        span {
+          font: {
+            size: 1rem;
+            family: "Montserrat";
+          }
+        }
+      }
+      #data-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        .form-group {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          font-family: "Montserrat";
+          .input-part {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            width: 46%;
+            gap: 5px;
+            .input {
+              height: 1.7rem;
+              background: $input-color-border;
+              outline: none;
+              border: 1px solid white;
+              color: #ffffff;
+              padding: 4px;
+              letter-spacing: 1.5px;
+            }
+          }
+        }
+      }
+      .textarea-part {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5em;
+        font-family: "Montserrat";
+        gap: 10px;
+        textarea {
+          max-width: 100%;
+          min-width: 100%;
+          max-height: 300px;
+          min-height: 100px;
+          background: $input-color-border;
+          outline: none;
+          border: 1px solid white;
+          color: #ffffff;
+          padding: 4px;
+        }
+      }
+      button {
+        background: $yellow-main;
+        border: 0;
+        padding: 5px;
+        font-family: "Bebas-Neue";
+        font-size: 20px;
+        width: 150px;
+        border-radius: 25px;
+        cursor: pointer;
+        margin: auto {
+          top: 2%;
+        }
+      }
+    }
+  }
+  #skate-picture {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    img {
+      width: 65%;
+      min-width: 400px;
+      z-index: 5;
+    }
+  }
+}
+#error {
+    padding: 5px 10px;
+    border-radius: 15px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  background: rgba(255, 51, 0, 0.263);
+  color: rgb(248, 108, 108);
+  display: none;
+  img {
+    width: 35px;
+    height: 35px;
+  }
+}

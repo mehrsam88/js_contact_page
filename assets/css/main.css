@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/montserrat/Montserrat-Regular.eot");
+  src: url("../font/montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../font/montserrat/Montserrat-Regular.woff2") format("woff2"), url("../font/montserrat/Montserrat-Regular.woff") format("woff"), url("../font/montserrat/Montserrat-Regular.ttf") format("truetype"), url("../font/montserrat/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bebas-Neue";
+  src: url("../font/babasneue/BebasNeue-Regular.eot");
+  src: url("../font/babasneue/BebasNeue-Regular.eot?#iefix") format("embedded-opentype"), url("../font/babasneue/BebasNeue-Regular.woff2") format("woff2"), url("../font/babasneue/BebasNeue-Regular.woff") format("woff"), url("../font/babasneue/BebasNeue-Regular.ttf") format("truetype"), url("../font/babasneue/BebasNeue-Regular.svg#BebasNeue-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  height: 100vh;
+  background-color: #F2CB2E;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+#container #contact-data {
+  width: 50%;
+  height: 100%;
+  border-radius: 0 0 62px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #111111;
+  color: #ffffff;
+  position: relative;
+}
+#container #contact-data::before {
+  content: "";
+  position: absolute;
+  width: 79px;
+  height: 79px;
+  background-color: #111111;
+  top: 0;
+  right: -79px;
+}
+#container #contact-data::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-color: #F2CB2E;
+  top: 0;
+  right: -100px;
+  border-radius: 62px 0 0 0;
+}
+#container #contact-data #form {
+  width: 60%;
+}
+#container #contact-data #form #header-form {
+  margin-bottom: 8%;
+}
+#container #contact-data #form #header-form h1 {
+  font-size: 4rem;
+  font-family: "Bebas-Neue";
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+#container #contact-data #form #header-form span {
+  font-size: 1rem;
+  font-family: "Montserrat";
+}
+#container #contact-data #form #data-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+#container #contact-data #form #data-form .form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-family: "Montserrat";
+}
+#container #contact-data #form #data-form .form-group .input-part {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 46%;
+  gap: 5px;
+}
+#container #contact-data #form #data-form .form-group .input-part .input {
+  height: 1.7rem;
+  background: rgba(196, 196, 196, 0.0235294118);
+  outline: none;
+  border: 1px solid white;
+  color: #ffffff;
+  padding: 4px;
+  letter-spacing: 1.5px;
+}
+#container #contact-data #form .textarea-part {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5em;
+  font-family: "Montserrat";
+  gap: 10px;
+}
+#container #contact-data #form .textarea-part textarea {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 300px;
+  min-height: 100px;
+  background: rgba(196, 196, 196, 0.0235294118);
+  outline: none;
+  border: 1px solid white;
+  color: #ffffff;
+  padding: 4px;
+}
+#container #contact-data #form button {
+  background: #F2CB2E;
+  border: 0;
+  padding: 5px;
+  font-family: "Bebas-Neue";
+  font-size: 20px;
+  width: 150px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 2%;
+}
+#container #skate-picture {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+}
+#container #skate-picture img {
+  width: 65%;
+  min-width: 400px;
+  z-index: 5;
+}
+
+#error {
+  padding: 5px 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  background: rgba(255, 51, 0, 0.263);
+  color: rgb(248, 108, 108);
+  display: none;
+}
+#error img {
+  width: 35px;
+  height: 35px;
+}/*# sourceMappingURL=main.css.map */
