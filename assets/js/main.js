@@ -1,4 +1,4 @@
-var inputresult = [];
+let inputresult = [];
 function inputs_data() {
   const data_input = document.querySelectorAll("input, textarea");
   const Error = document.querySelector("#error");
